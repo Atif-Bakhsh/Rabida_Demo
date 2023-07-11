@@ -34,7 +34,7 @@ $language = require_once($languageFile);
 </head>
 <body>
     <h2><?php echo $language['LoginTitle']; ?></h2>
-
+    <h2>this is a test heading</h2>
     <form>
         <label for="username" class="<?php if ($languageFile === 'ar.php') echo 'rtl'; ?>"><?php echo $language['Box1']; ?>:</label>
         <input type="text" name="username" id="username" required><br><br>
@@ -49,6 +49,7 @@ $language = require_once($languageFile);
         <input type="hidden" name="language" value="<?php echo ($languageFile === 'en.php') ? 'ar' : 'en'; ?>">
         <input type="submit" name="toggle" value="<?php echo ($languageFile === 'en.php') ? 'Switch to ar' : 'التبديل إلى اللغة الإنجليزية'; ?>">
     </form>
+
 </body>
 </html>
 
