@@ -1,0 +1,23 @@
+msgid ""
+msgstr ""
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: lokalise.com\n"
+"Project-Id-Version: Rabida_Demo\n"
+"PO-Revision-Date: 2023-07-11 09:27\n"
+"Last-Translator: lokalise.com\n"
+"Language-Team: lokalise.com\n\n"
+"Language: en\n"
+
+msgid "EnterEmail"
+msgstr "Enter your Email"
+
+msgid "EnterPassword"
+msgstr "Enter your password"
+
+msgid "LoginTitle"
+msgstr "Login Page"
+
+msgid "SubmitButton"
+msgstr "Send"
