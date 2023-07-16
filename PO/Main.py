@@ -1,34 +1,46 @@
-# import gettext
 # import tkinter as tk
+# from tkinter import messagebox
+# from tkinter import ttk
+# import gettext
 
 # def set_language(lang):
-#     translation = gettext.translation('Rabida_Demo', languages=[lang])
+#     translation = gettext.translation('Rabida_Demo', languages=[lang], localedir='.')
 #     translation.install()
+#     root.title(_("Login Page"))
+#     email_label.configure(text=_("Enter your Email"))
+#     password_label.configure(text=_("Enter your password"))
+#     submit_button.configure(text=_("Send"))
 
-# def create_gui():
-#     window = tk.Tk()
-#     window.title(_("Login Page"))
+# def toggle_language():
+#     current_lang = gettext.translation().info()['language']
+#     new_lang = 'ar' if current_lang == 'en' else 'en'
+#     set_language(new_lang)
 
-#     email_label = tk.Label(window, text=_("Enter your Email"))
-#     email_label.pack()
+# root = tk.Tk()
+# root.geometry("300x200")
+# root.title("Login Page")
 
-#     email_entry = tk.Entry(window)
-#     email_entry.pack()
+# # Language Toggle Button
+# toggle_button = ttk.Button(root, text="Toggle Language", command=toggle_language)
+# toggle_button.pack(pady=20)
 
-#     password_label = tk.Label(window, text=_("Enter your password"))
-#     password_label.pack()
+# # Email Label and Entry
+# email_label = ttk.Label(root, text="Enter your Email")
+# email_label.pack(pady=10)
+# email_entry = ttk.Entry(root)
+# email_entry.pack()
 
-#     password_entry = tk.Entry(window)
-#     password_entry.pack()
+# # Password Label and Entry
+# password_label = ttk.Label(root, text="Enter your password")
+# password_label.pack(pady=10)
+# password_entry = ttk.Entry(root, show="*")
+# password_entry.pack()
 
-#     submit_button = tk.Button(window, text=_("Send"))
-#     submit_button.pack()
+# Submit Button
+# submit_button = ttk.Button(root, text="Send", command=lambda: messagebox.showinfo("Message", "Form submitted!"))
+# submit_button.pack(pady=20)
 
-#     window.mainloop()
+# # Set initial language to English
+# set_language('en')
 
-# if __name__ == '__main__':
-#     set_language('en')  # Set the desired language ('en' for English)
-
-#     _ = gettext.gettext  # Create a shortcut function for translations
-
-#     create_gui()
+# root.mainloop()

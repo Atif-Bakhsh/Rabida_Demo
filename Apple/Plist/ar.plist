@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>EnterEmail</key>
+	<string>أدخل بريدك الإلكتروني</string>
+	<key>EnterPassword</key>
+	<string>ادخل رقمك السري</string>
+	<key>LoginTitle</key>
+	<string>صفحة تسجيل الدخول</string>
+	<key>SubmitButton</key>
+	<string>إرسال</string>
+</dict>
+</plist>

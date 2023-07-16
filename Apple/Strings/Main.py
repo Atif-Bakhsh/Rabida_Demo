@@ -24,9 +24,9 @@ def toggle_language():
 
     # Load the strings from the selected language file
     if current_language == 'English':
-        strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Strings/RabidaRun/en.strings")
+        strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Apple/Strings/en.strings")
     else:
-        strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Strings/RabidaRun/ar.strings")
+        strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Apple/Strings/ar.strings")
 
     # Update the labels with the new strings
     for label, key in zip(label_list, strings.keys()): 
@@ -51,7 +51,7 @@ toggle_button = tk.Button(window, text="Toggle Language", command=toggle_languag
 toggle_button.pack()
 
 # Load the initial strings from the English language file
-strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Strings/RabidaRun/en.strings")
+strings = load_strings("/Users/social/Documents/Work/Rabida_Demo/Rabida_Demo/Apple/Strings/en.strings")
 
 # Create labels for each key-value pair
 label_list = []
@@ -75,4 +75,3 @@ login_button.pack()
 
 # Run the interface
 window.mainloop()
-z

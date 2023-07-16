@@ -1,48 +1,48 @@
-package PO;
+// package PO;
 
-import java.util.Locale;
-import java.util.ResourceBundle;
-import javax.swing.*;
+// import java.util.Locale;
+// import java.util.ResourceBundle;
+// import javax.swing.*;
 
-public class GUIProgram {
-    private static ResourceBundle bundle;
+// public class GUIProgram {
+//     private static ResourceBundle bundle;
 
-    public static void main(String[] args) {
-        setLanguage("en"); // Set the desired language ('en' for English)
+//     public static void main(String[] args) {
+//         setLanguage("en"); // Set the desired language ('en' for English)
 
-        SwingUtilities.invokeLater(() -> {
-            createGUI();
-        });
-    }
+//         SwingUtilities.invokeLater(() -> {
+//             createGUI();
+//         });
+//     }
 
-    private static void setLanguage(String lang) {
-        Locale locale = new Locale(lang);
-        bundle = ResourceBundle.getBundle("PO.resources.translations", locale);
-    }
+//     private static void setLanguage(String lang) {
+//         Locale locale = new Locale(lang);
+//         bundle = ResourceBundle.getBundle("PO.resources.translations", locale);
+//     }
 
-    private static void createGUI() {
-        JFrame frame = new JFrame(bundle.getString("LoginTitle"));
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//     private static void createGUI() {
+//         JFrame frame = new JFrame(bundle.getString("LoginTitle"));
+//         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JPanel panel = new JPanel();
+//         JPanel panel = new JPanel();
 
-        JLabel emailLabel = new JLabel(bundle.getString("EnterEmail"));
-        panel.add(emailLabel);
+//         JLabel emailLabel = new JLabel(bundle.getString("EnterEmail"));
+//         panel.add(emailLabel);
 
-        JTextField emailField = new JTextField(20);
-        panel.add(emailField);
+//         JTextField emailField = new JTextField(20);
+//         panel.add(emailField);
 
-        JLabel passwordLabel = new JLabel(bundle.getString("EnterPassword"));
-        panel.add(passwordLabel);
+//         JLabel passwordLabel = new JLabel(bundle.getString("EnterPassword"));
+//         panel.add(passwordLabel);
 
-        JPasswordField passwordField = new JPasswordField(20);
-        panel.add(passwordField);
+//         JPasswordField passwordField = new JPasswordField(20);
+//         panel.add(passwordField);
 
-        JButton submitButton = new JButton(bundle.getString("SubmitButton"));
-        panel.add(submitButton);
+//         JButton submitButton = new JButton(bundle.getString("SubmitButton"));
+//         panel.add(submitButton);
 
-        frame.getContentPane().add(panel);
-        frame.pack();
-        frame.setVisible(true);
-    }
-}
+//         frame.getContentPane().add(panel);
+//         frame.pack();
+//         frame.setVisible(true);
+//     }
+// }
